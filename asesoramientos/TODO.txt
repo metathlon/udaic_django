@@ -1,0 +1,23 @@
+ASESORAMIENTOS:
+
+- Asesoramiento base:
+    - Quien lo solicita:
+        - Nombre
+        - Correo
+        - Servicio
+        - Residente?
+            - Si es residente año
+
+    - Qué quiere:
+        - En sus palabras
+
+    - Tipo de asesoramiento:
+        - Según nosotros
+
+    - Fecha de apertura
+
+- Sesion_Asesoramiento:
+    - Cuando llega
+    - Cuando se va
+    - Resumen
+    - Archivos?
