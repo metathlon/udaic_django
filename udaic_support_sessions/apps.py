@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AsesoramientosConfig(AppConfig):
-    name = 'asesoramientos'
+    name = 'udaic_support_sessions'

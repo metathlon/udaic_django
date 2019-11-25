@@ -7,7 +7,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('asesoramientos/', include('asesoramientos.urls', namespace='asesoramientos')),
+    path('udaic_support_sessions/', include('udaic_support_sessions.urls', namespace='udaic_support_sessions')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #mias
-    'asesoramientos',
+    'udaic_support_sessions',
 ]
 
 MIDDLEWARE = [
