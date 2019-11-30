@@ -1,0 +1,6 @@
+Para los idiomas:
+En "terminal":
+django-admin makemessages -l es
+django-admin makemessages -l en
+
+django-admin compilemessages

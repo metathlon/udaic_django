@@ -8,6 +8,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('udaic_support_sessions/', include('udaic_support_sessions.urls', namespace='udaic_support_sessions')),
+    path('',  include('udaic_blog.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
