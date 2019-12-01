@@ -1,0 +1,89 @@
+/*===================================== SIDE BAR =====================================*/
+ul.sidenav.sidenav-fixed li.Logo img{
+    width: 100%;
+    height: 100%;
+}
+
+ul.sidenav.sidenav-fixed li.Logo {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 160px;
+}
+
+#Logo-container {
+    height: 140px;
+    margin-bottom: 20px;
+}
+
+.sidenav .collapsible-header, .sidenav.fixed .collapsible-header {
+    background-color: transparent;
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    padding: 0 32px;
+}
+ul.sidenav.sidenav-fixed ul.collapsible-accordion {
+	background-color: #FFF
+}
+
+ul.sidenav.sidenav-fixed ul.collapsible-accordion a.collapsible-header {
+	padding: 0 30px
+}
+
+ul.sidenav.sidenav-fixed ul.collapsible-accordion .collapsible-body li a {
+	font-weight: 400;
+	padding: 0 37px 0 45px
+}
+
+/*===================================== NAV BAR =====================================*/
+nav.top-nav {
+	height: 110px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+	background-color: transparent
+}
+
+nav.top-nav h1.header {
+	margin: 0;
+	padding-top: 22px
+}
+
+a.sidenav-trigger.top-nav {
+	position: absolute;
+	text-align: center;
+	height: 48px;
+	width: 48px;
+	top: 28px;
+	float: none;
+	margin-left: 1.5rem;
+	color: #FAFAFF;
+	font-size: 36px;
+	z-index: 2
+}
+
+a.sidenav-trigger.top-nav i {
+	font-size: 32px
+}
+
+@media only screen and (max-width:600px) {
+	a.sidenav-trigger.top-nav {
+		left: 0
+	}
+
+	ul.sidenav.sidenav-fixed {
+		border: 0
+	}
+
+}
+
+@media only screen and (max-width:992px) {
+	nav .nav-wrapper {
+		text-align: center
+	}
+
+	nav .nav-wrapper a.page-title {
+		font-size: 36px
+	}
+
+}

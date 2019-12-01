@@ -1,7 +1,7 @@
 from django.urls import  path
 from . import views
 
-app_name = 'udaic_support_sessions'
+app_name = 'udaic_blog'
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.blog_home, name='blog_home'),
     ]

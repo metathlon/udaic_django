@@ -1,20 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n %}
 
+{#{% block title %}{% trans "UdAIC" %}{% endblock %}#}
+{#{% block page_title %}{% trans "UdAIC Blog" %}{% endblock %}#}
 
-{% block title %}
-    {% if title %}
-        <title> {{ title }} </title>
-    {% else %}
-        <title> UdAIC </title>
-    {% endif %}
-{% endblock title %}
-
-{% block page_title %}{% trans "UdAIC Blog" %}{% endblock %}
-
-  <body class="valign-wrapper2">
-      {% block sidebar %}{% endblock %}
-      <div class="{% block container_class %}container expand-on-small-only{% endblock %}">
-          {% block content %}{% endblock %}
-      </div>
-  </body>
