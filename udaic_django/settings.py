@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #dependencias
-    'material',
+    #'material',
 
     #mias
     'udaic_support_sessions',
