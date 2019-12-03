@@ -43,9 +43,9 @@ INSTALLED_APPS = [
     #'material',
 
     #mias
-    'udaic_support_sessions',
-    'udaic_profile',
-    'udaic_blog'
+    'udaic_support_sessions.apps.AsesoramientosConfig',
+    'udaic_profile.apps.UdaicProfileConfig',
+    'udaic_blog.apps.UdaicBlogConfig'
 
 ]
 

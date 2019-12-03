@@ -49,6 +49,22 @@
                 <li class="Logo">
                     <a href="#" id="Logo-container" class="brand-logo"><img src="{% static 'udaic/img/UDAIC_transparent.png' %}" alt="Logo UdAIC"/> </a>
                 </li>
+
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                          <img src="/static/udaic/img/user_background.svg">
+                        </div>
+                        {% block user_profile %}
+                            <a href="#" class="material-icons md-48 white-text">face</a>
+                            <a href="#"><span class="white-text name">Admin</span></a>
+                            <a href="#"><span class="white-text email">email</span></a>
+                        {% endblock user_profile %}
+                    </div>
+                </li>
+
+
+
                 <li class="bold"><a href="{% url 'home' %}" class="waves-effect waves-indigo">UdAIC</a></li>
                 <li class="no-padding">
                   <ul class="collapsible collapsible-accordion">
@@ -104,6 +120,21 @@
               </div>
 
               <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+
+
+                {% if messages %}
+                        {% for message in messages %}
+                            <div class="card-panel light-green white-text">
+                                <div class="row">
+                                    <h5>
+                                        <i class="material-icons md-24">face</i>
+                                        {{message}}
+                                    </h5>
+                                </div>
+                            </div>
+                       {% endfor %}
+                {% endif %}
+
                 {% block content %}
                 {% endblock %}
               </div>

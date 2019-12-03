@@ -1,0 +1,46 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+            <div class="card-panel">
+              <h4 class="header2">Form with icon prefixes</h4>
+              <div class="row">
+                <form class="col s12">
+                    {{ form.as_p }}
+{#                  <div class="row">#}
+{#                    <div class="input-field col s12">#}
+{#                     <i class="material-icons md-36 prefix">face</i>#}
+{#                      <input id="name3" type="text">#}
+{#                      <label for="first_name">Name</label>#}
+{#                    </div>#}
+{#                  </div>#}
+{#                  <div class="row">#}
+{#                    <div class="input-field col s12">#}
+{#                      <i class="material-icons md-36 prefix">email</i>#}
+{#                      <input id="email3" type="email">#}
+{#                      <label for="email">Email</label>#}
+{#                    </div>#}
+{#                  </div>#}
+{#                  <div class="row">#}
+{#                    <div class="input-field col s12">#}
+{#                      <i class="material-icons md-36 prefix">lock</i>#}
+{#                      <input id="password3" type="password">#}
+{#                      <label for="password">Password</label>#}
+{#                    </div>#}
+{#                  </div>#}
+
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <button class="btn indigo waves-effect waves-light right" type="submit" name="action">Submit
+                          <i class="mdi-content-send right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                </form>
+              </div>
+            </div>
+
+    </form>
+{% endblock content %}
